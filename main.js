@@ -1,6 +1,6 @@
 import images from "./images.js";
 
-console.log(images);
+// console.log(images);
 
 images.map(image => {
   const item = document.createElement("div");
@@ -14,7 +14,7 @@ images.map(image => {
 
   const itemImg = document.createElement("img");
   itemImg.classList.add("thumb");
-  itemImg.data("index", `${image._id}`);
+  itemImg.setAttribute("data-index", `${image._id}`);
   $(itemImg).attr("src", `./img/${image.src}`);
   $(item).append(itemImg);
 });
@@ -22,7 +22,7 @@ images.map(image => {
 
 let curImg = 0;
 
-console.log(images.length);
+// console.log(images.length);
 
 const loadPhoto = imgNum => {
   $(".photo").attr("src", `./img/${images[imgNum].src}`);
@@ -48,11 +48,9 @@ $(".arrow-left").on("click", () => {
   }
 });
 
-$(".caption").on("click", (event) => {
+$(".thumb").on("click", (event) => {
   let clicked = $(event.target).attr("data-index");
-  console.log(clicked);
   let imgNum = parseInt(clicked);
-  console.log(imgNum);
   $(".photo").attr("src", `./img/${images[imgNum].src}`);
 })
 
