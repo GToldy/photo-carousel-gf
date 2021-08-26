@@ -130,7 +130,7 @@ body {
   border-right: 1.5rem solid transparent;
   border-bottom: 0.75rem solid rgba(255, 255, 255, 0.25);
   position: absolute;
-  animation: fade-in 0.5s;
+  animation: fade-in 0.25s;
   animation-delay: 0.25s;
   animation-fill-mode: forwards;
 }
@@ -145,7 +145,7 @@ body {
   position: absolute;
   visibility: visible;
   justify-content: center;
-  animation: fade-in 0.5s;
+  animation: fade-in 0.25s;
   animation-delay: 0.25s;
   animation-fill-mode: forwards;
 }
