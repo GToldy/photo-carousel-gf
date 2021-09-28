@@ -27,6 +27,7 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 5rem;
+  transition: transform 1s
 }
 .photo-frame:hover .photo-caption {
   opacity: 1;
